@@ -7,5 +7,12 @@ public class MainApp {
 		
 		System.out.println("First Student is"+ s1.toString());
 		System.out.println("First Student is"+ s2.toString());
+		
+		StudentService ss=new StudentService();
+		ss.addStudent("Sanchit",24,"B.Tech");
+		ss.addStudent("Pratham",24,"Finance");
+		System.out.println(ss.getAllStudents());
+		System.out.println(ss.findStudentByRollNo(3).toString());
+		
 	}
 }
