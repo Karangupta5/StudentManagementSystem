@@ -1,13 +1,12 @@
 package com.gupta.sms;
 
 public class Student {
-	private int age,roll_no;
+	public int age,roll_no;
 	private String name,course;
 	
 	private static int counter=1;
 	
 	public Student() {
-		
 	}
 	
 	public Student(String name,int age,String course) {
@@ -42,6 +41,10 @@ public class Student {
 //	@Override
 	public String toString() {
 		return " [roll_no=" + roll_no + ", name=" + name + ", age=" + age + ", course=" + course + "]";
+	}
+
+	public static int getCounter() {
+		return counter;
 	}
 	
 	
