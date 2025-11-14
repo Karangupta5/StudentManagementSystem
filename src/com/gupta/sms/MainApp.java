@@ -12,7 +12,12 @@ public class MainApp {
 		ss.addStudent("Sanchit",24,"B.Tech");
 		ss.addStudent("Pratham",24,"Finance");
 		System.out.println(ss.getAllStudents());
-		System.out.println(ss.findStudentByRollNo(3).toString());
-		
+//		System.out.println(ss.findStudentByRollNo(3).toString());
+		ss.addStudent("anmol",24,"MBA");
+		ss.addStudent("Manas",23,"PGDM");
+		ss.updateStudent(3, "Sagar", 25, "TCP");
+		System.out.println(ss.getAllStudents());
+		ss.deleteStudent(5);
+		System.out.println(ss.getAllStudents());
 	}
 }
