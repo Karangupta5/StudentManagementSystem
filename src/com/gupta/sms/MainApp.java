@@ -44,9 +44,7 @@ public class MainApp {
 				+ "3. Search student by roll no\r\n"
 				+ "4. Update student\r\n"
 				+ "5. Delete student\r\n"
-				+ "6. Save students to file\r\n"
-				+ "7. Load students from file\r\n"
-				+ "8. Exit");
+				+ "6. Exit");
 		int ch=readInt(sc, "Enter choice: ");
 		switch(ch) {
 		case 1:{
@@ -88,7 +86,7 @@ public class MainApp {
 			else System.out.println("Operation Terminated \n");
 			break;
 		}
-		case 8:{
+		case 6:{
 			check=false;
 			System.out.println("EXIT Successfully");
 			break;
